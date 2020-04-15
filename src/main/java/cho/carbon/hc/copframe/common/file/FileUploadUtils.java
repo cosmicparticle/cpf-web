@@ -5,13 +5,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.FileCopyUtils;
 
 public class FileUploadUtils {
 	private final String absPath;
 	private final String folderUri;
-	Logger logger = Logger.getLogger(FileUploadUtils.class);
+	Logger logger = LoggerFactory.getLogger(FileUploadUtils.class);
 	
 	
 	public FileUploadUtils(String absPath, String folderUri) {

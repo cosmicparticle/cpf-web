@@ -2,7 +2,8 @@ package cho.carbon.hc.copframe.common.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.context.request.WebRequest;
@@ -13,7 +14,7 @@ import cho.carbon.hc.copframe.utils.TextUtils;
 
 public class CommonRequestAttributeSetInterceptor implements WebRequestInterceptor{
 	
-	Logger logger = Logger.getLogger(CommonRequestAttributeSetInterceptor.class);
+	Logger logger = LoggerFactory.getLogger(CommonRequestAttributeSetInterceptor.class);
 	
 	
 	@Override

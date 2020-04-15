@@ -20,15 +20,15 @@ public class WorkProgress {
 	private Set<Integer> failedIndexs = new TreeSet<Integer>();
 	//进度总数
 	private int total = 0;
-	//当前进度值
+	//当前进度�?
 	private int current = 0;
 	
-	//最后一次标记的时间
+	//�?后一次标记的时间
 	private long lastVeniTime;
 	
-	//最后一次执行子工作的开始时间
+	//�?后一次执行子工作的开始时�?
 	private long lastItemStartTime = 0;
-	//最后一次执行子工作的所用时间
+	//�?后一次执行子工作的所用时�?
 	private long lastItemInterval = 0;
 	
 	public WorkProgress() {
@@ -47,7 +47,7 @@ public class WorkProgress {
 	}
 	
 	/**
-	 * 工作是否完成，与{@link #isBreaked()}是互斥状态
+	 * 工作是否完成，与{@link #isBreaked()}是互斥状�?
 	 * @return
 	 */
 	public boolean isCompleted() {
@@ -64,7 +64,7 @@ public class WorkProgress {
 	
 	
 	/**
-	 * 工作是否中断，与{@link #isCompleted()}是互斥状态
+	 * 工作是否中断，与{@link #isCompleted()}是互斥状�?
 	 * @return
 	 */
 	public boolean isBreaked() {
@@ -80,9 +80,9 @@ public class WorkProgress {
 	}
 	
 	/**
-	 * 全局错误，
+	 * 全局错误�?
 	 * 仅在{@linkplain ProgressPollableThread #doWork(WorkProgress) doWork}
-	 * 方法抛出异常时有值
+	 * 方法抛出异常时有�?
 	 * @param globalException
 	 */
 	public Exception getGlobalException() {
@@ -90,9 +90,9 @@ public class WorkProgress {
 	}
 	
 	/**
-	 * 设置全局错误，
+	 * 设置全局错误�?
 	 * 仅在{@linkplain ProgressPollableThread #doWork(WorkProgress) doWork}
-	 * 方法抛出异常时有值
+	 * 方法抛出异常时有�?
 	 * @param globalException
 	 */
 	void setGlobalException(Exception globalException) {
