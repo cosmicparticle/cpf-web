@@ -1,5 +1,6 @@
 package cho.carbon.hc.copframe.dao.utils;
 
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
@@ -14,6 +15,12 @@ public class UserUtils {
 	@SuppressWarnings("unchecked")
 	public static <T> T getCurrentUser(Class<T> userClass){
 		Authentication authen = SecurityContextHolder.getContext().getAuthentication();
+		
+		if(authen instanceof AnonymousAuthenticationToken) {
+			// 匿名用户返回空
+			return null;
+		}
+		
 		if(authen != null){
 			Object user = authen.getPrincipal();
 			return (T) user;
