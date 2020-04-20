@@ -19,7 +19,7 @@ public class CpfInvalidSessionStrategy implements InvalidSessionStrategy{
 	final static Logger logger = LoggerFactory.getLogger(CpfInvalidSessionStrategy.class);
 	
 	public CpfInvalidSessionStrategy() {
-		logger.error("构�?�Session过期拦截策略对象");
+		logger.error("构造Session过期拦截策略对象");
 	}
 	
 	@Override
