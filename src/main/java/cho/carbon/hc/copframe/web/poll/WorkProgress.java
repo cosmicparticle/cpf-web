@@ -64,7 +64,7 @@ public class WorkProgress {
 	
 	
 	/**
-	* 工作是否中断，与{@link #isCompleted()}是互斥状态
+	 * 工作是否中断，与{@link #isCompleted()}是互斥状态
 	 * @return
 	 */
 	public boolean isBreaked() {
@@ -80,7 +80,7 @@ public class WorkProgress {
 	}
 	
 	/**
-	 * * 全局错误，
+	 * 全局错误，
 	 * 仅在{@linkplain ProgressPollableThread #doWork(WorkProgress) doWork}
 	 * 方法抛出异常时有值
 	 * @param globalException
@@ -92,7 +92,7 @@ public class WorkProgress {
 	/**
 	 * 设置全局错误，
 	 * 仅在{@linkplain ProgressPollableThread #doWork(WorkProgress) doWork}
-	 *  方法抛出异常时有值
+	 * 方法抛出异常时有值
 	 * @param globalException
 	 */
 	void setGlobalException(Exception globalException) {
